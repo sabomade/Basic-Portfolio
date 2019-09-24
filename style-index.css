@@ -1,0 +1,17 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    background-image: url("assets/bananas.png");
+    background-repeat: repeat;
+}
+
+.container{
+    max-width: 940px;
+    padding: 0px 10px;
+}
