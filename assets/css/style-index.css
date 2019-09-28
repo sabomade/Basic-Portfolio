@@ -6,74 +6,99 @@ html{
     box-sizing: inherit;
 }
 
-.nav{
-    display: flex;
-    justify-content: flex-end;
-    flex-flow: row nowrap;
-    background: #FFC300;
-}
-.nav a{
-    display: block;
-    padding: 1em;
-    
-    color: black;
-    font-family: 'Open Sans', sans-serif;
-    text-decoration: none;
-}
-.nav a:hover{
-    background: #FFB300;
-}
-
 body{
     background-image: url("../img/bananas.png");
     background-repeat: repeat;
 }
 
+.nav{
+    background: #FFC300;
+}
+
+.nav-contents{
+    max-width: 960px;
+    margin: auto;
+    height: 55px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+h1 {
+    display: block;
+    background: #A5A5A4;
+
+    font-family: 'Arvo', serif;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 55px;
+    padding: 0px 10px;
+}
+
+.menu{
+    width: 500px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu a{
+    display: inline;
+    padding: 1em;
+    
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    
+}
+.menu a:hover{
+    background: #FFB300;
+}
+
 .container{
-    max-width: 920px;
+    max-width: 960px;
     height: 400px;
-    padding: 10px 10px;
+    padding: 20px 20px;
     background: #FEFDF9;
     margin: 20px auto;
     
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: baseline;
 }
 
-.container > div{
-    width: 30%;
-}
-
-h1, h2, h3, h4{
+h2 {
     font-family: 'Arvo', serif;
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 30px;
+    line-height: 2em;
     font-weight: bold;
+
+    padding-bottom: .5em;
+    margin-bottom: .7em;
+    border-bottom: 3px solid #FFB300;
+}
+
+.about{
+    display: flex;
+}
+
+.pic{
+    width: 200px;
+    height: 200px;
+    align-self: baseline;
 }
 
 p{
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.6;
+    margin-left: 10px;
 }
 
-li{
+/* li{
     line-height: 2;
-}
-.pic{
-    width: 100%;
-    height: 100%;
-}
+} */
 
-.item2{
-    margin-top: 10px;
-}
-
-.item3{
-    margin-left:10px;
-}
 
 .footer{
     position: fixed;
