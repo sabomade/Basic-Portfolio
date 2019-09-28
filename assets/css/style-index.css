@@ -107,6 +107,7 @@ p{
     width: 100%;
     text-align: center;
 
+    border-top: 3px solid #A5A5A4;
     background: #FEFDF9;
 
     justify-content: center;
@@ -115,10 +116,9 @@ p{
 
 .footer > div{
     margin:10px;
-    line-height: 1em;
-    opacity: 1;
+    line-height: .5em;
+    /* opacity: 1; */
 }
-
 
 .social a{
     margin: 0px 30px;
@@ -126,5 +126,11 @@ p{
 
 .credit a{
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 12px;
+}
+
+.credit p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    /* padding-top: 10px; */
 }
