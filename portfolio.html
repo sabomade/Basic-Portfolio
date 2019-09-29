@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="assets/css/style-index.css">
         <link href="https://fonts.googleapis.com/css?family=Arvo|Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -22,10 +23,13 @@
                 <div>
                     <h1>Sara Bolduc</h1>
                 </div>
-                <ul class="menu">
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                <ul class="topnav">
+                        <li class="item"><a href="index.html">About</a></li>
+                        <li class="item"><a href="portfolio.html">Portfolio</a></li>
+                        <li class="item"><a href="contact.html">Contact</a></li>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                <i class="fa fa-bars"></i>
+                              </a>
                 </ul>
             </div>
         </div>
@@ -33,23 +37,23 @@
             <h2>Portfolio</h2>
             <div class="port-pics">
                 <div>
-                    <img src="assets/img/flamingo.jpg">
+                    <img src="assets/img/flamingo.jpg" alt="flamingos">
                     <p class="caption">Birds</p>
                 </div>
                 <div>
-                    <img src="assets/img/duckie.jpg">
+                    <img src="assets/img/duckie.jpg" alt="duckie">
                     <p class="caption">Ducks</p>
                 </div>
                 <div>
-                    <img src="assets/img/koala.jpg">
+                    <img src="assets/img/koala.jpg" alt="koala">
                     <p class="caption">Bears</p>
                 </div>
                 <div>
-                    <img src="assets/img/dog.jpg">
+                    <img src="assets/img/dog.jpg" alt="dog">
                     <p class="caption">Dogs</p>
                 </div>
                 <div>
-                    <img src="assets/img/chameleon.jpg">
+                    <img src="assets/img/chameleon.jpg" alt="chameleon">
                     <p class="caption">Reptiles</p>
                 </div>
             </div>
@@ -60,6 +64,15 @@
             </div> 
         </div>
         
-        <script src="" async defer></script>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                x.className += " responsive";
+                } else {
+                x.className = "topnav";
+                }
+            }
+        </script>
     </body>
 </html>
