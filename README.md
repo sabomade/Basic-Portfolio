@@ -1,7 +1,7 @@
 # Basic-Portfolio
 My basic html portfolio, non-responsive
 
-![Image of Basic Portfolio](assests/img/basic-portfolio.png)
+![Image of Basic Portfolio](assets/img/basic-portfolio.png)
 
 # Built With
 * html
